@@ -1,0 +1,121 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ body {
+     background: #1abc9c;
+     overflow: hidden;
+ }
+
+ .container {
+     max-width: 440px;
+     padding: 0 20px;
+     margin: 170px auto;
+ }
+
+ .rapper {
+     width: 100%;
+     background: #fff;
+     border-radius: 5px;
+ }
+
+ .rapper .title {
+     line-height: 80px;
+     background: #16a085;
+     color: #fff;
+     border-radius: 5px 5px 0 0;
+     font-size: 29px;
+     font-weight: 500;
+     padding-left: 20px;
+     text-align: center;
+ }
+
+ .rapper form {
+     padding: 20px 20px 20px 20px;
+ }
+
+ .rapper form .row {
+     height: 45px;
+     margin-bottom: 15px;
+     /* background: #ff0000; */
+     position: relative;
+ }
+
+ .rapper form .row input {
+     height: 100%;
+     width: 100%;
+     font-size: 15px;
+     outline: none;
+     padding-left: 50px;
+     border-radius: 5px;
+     border: 1px solid lightgray;
+     transition: all 0, 3s ease;
+ }
+
+ form .row input:focus {
+     border-color: #16a085;
+     box-shadow: inset 0px 0px 2px 2px rgba(26, 188, 156, 0.3);
+ }
+
+ .rapper form .row i {
+     position: absolute;
+     width: 45px;
+     height: 100%;
+     border-radius: 5px 5px;
+     background: #16a085;
+     color: #fff;
+     border: 1px solid #16a085;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .rapper form .pass {
+     margin: -8px 0 20px 0;
+ }
+
+ .rapper form .pass a {
+     color: #16a085;
+     text-decoration: none;
+     font-size: 17px;
+ }
+
+ .rapper form .pass a:hover {
+     text-decoration: underline;
+ }
+
+ .rapper form .signup-link {
+     margin-top: 20px;
+     text-align: center;
+     font-size: 18px;
+ }
+
+ .rapper form .signup-link a {
+     color: #16a085;
+     text-decoration: none;
+ }
+
+ .rapper form .signup-link a:hover {
+     text-decoration: underline;
+ }
+
+ .rapper form .button input {
+     background-color: #16a085;
+     color: #fff;
+     font-size: 16px;
+     font-weight: 500;
+     border-radius: 5px 5px;
+     border: 1px solid #16a085;
+     cursor: pointer;
+     text-align: center;
+     padding-left: 0px;
+ }
+
+ form .button input:hover {
+     background-color: #12876f;
+ }

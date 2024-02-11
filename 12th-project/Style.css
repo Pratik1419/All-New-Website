@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kalnia', serif;
+}
+html,body {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    place-items: center;
+    background: linear-gradient(to right,#d265ed 0%,#ff0080 100%);
+}
+.container{
+    background: #fff;
+    max-width: 400px;
+    width: 100%;
+    padding: 24px 30px;
+    border-radius: 6px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.14);
+}
+.container form .title{
+    font-size: 30px;
+    font-weight: 400;
+    margin: 20px 0 10px 0;
+    position: relative;
+}
+.container form .title::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 26px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 5px;
+    background: linear-gradient(to right,#d265ed 5%,#ff0080 100%);
+}
+.container form .input-box{
+    width: 100%;
+    height: 40px;
+    margin-top: 25px;
+    position: relative;
+}
+.container form .input-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 13px;
+    border: none;
+}
+.container form .underline:before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    left: 0;
+    bottom: 0;
+}
+.container form .underline:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to right,#d265ed 5%,#ff0080 100%);
+    transform: scaleX(0);
+    transform-origin: middle;
+    transition: all 0.3s ease;
+}
+.container form .input-box input:focus ~ .underline:after,
+.container form .input-box input:valid ~ .underline:after{
+    transform: scaleX(1);
+    transform-origin: middle;
+}
+.container form .button{
+    margin: 40px 0 20px 0;
+}
+.container form .input-box [type="submit"] {
+    font-size: 17px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(to right,#d265ed 5%,#ff0080 100%);
+    transition: all 0.3s ease;
+}
+.container form .input-box [type="submit"]:hover{
+    letter-spacing: 1px;
+    background: linear-gradient(to left,#d265ed 0%,#ff0080 100%);
+}
+.container .option {
+    font-size: 15px;
+    text-align: center;
+}
+.container .instagram a,
+.container .facebook a{
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    text-decoration: none;
+    padding-left: 20px;
+    color: #fff;
+    line-height: 45px;
+    border-radius: 5px;
+}
+.container .facebook i,
+.container .instagram i{
+    padding-right: 10px;
+    font-size: 20px;
+}
+.container .facebook a{
+    margin: 20px 0 15px 0;
+    background: linear-gradient(to left,#3b5998 0%,#476bb8 100%);
+}
+.container .facebook a:hover{
+    background: linear-gradient(to right,#355fba 0%,#2853b1 100%);
+}
+.container .instagram a{
+    margin: 20px 0 45px 0;
+    background: linear-gradient(to left,#cb4651 0%,#d74990 100%);
+}
+.container .instagram a:hover{
+    background: linear-gradient(to right,#c2313d 0%,#ca2b7a 100%);
+}

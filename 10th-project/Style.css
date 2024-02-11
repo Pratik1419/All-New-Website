@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hedvig Letters Serif', serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #c1b7ec;
+}
+.container {
+    max-width: 950px;
+    width: 100%;
+    background: #fff;
+    padding: 40px 50px 40px 40px;
+    margin: 0 20px;
+    box-shadow: 10px 5px 5px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.container .main-title {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.container .content .list {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 20%;
+    margin-right: 50px;
+}
+.container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content .list label {
+    height: 60px;
+    font-size: 22px;
+    font-weight: 400;
+    border-radius: 10px;
+    line-height: 60px;
+    /* margin: 10px 5px; */
+    /* padding-left: 25px; */
+    /* background: green; */
+    color: #333;
+    cursor: pointer;
+    z-index: 12;
+    transition: all 0.2s ease;
+}
+.content .list label:hover{
+    color: #6d6d6d;
+}
+#home:checked ~.list .home,
+#blog:checked ~.list .blog,
+#help:checked ~.list .help,
+#code:checked ~.list .code,
+#about:checked ~.list .about {
+    color: #fff;
+}
+.content .indicators {
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #6d6d6d;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+#home:checked ~ .list .indicators {
+    top: 0;
+}
+#blog:checked ~ .list .indicators {
+    top: 60px;
+}
+#help:checked ~ .list .indicators {
+    top: 120px;
+}
+#code:checked ~ .list .indicators {
+    top: 180px;
+}
+#about:checked ~ .list .indicators {
+    top: 240px;
+}
+.content input[type="radio"]{
+    display: none;
+}
+.container .content .text-conten {
+    width: 80%;
+    height: 100%;
+}
+.content .text-content .text {
+    display: none;
+}
+.content .text-content .home {
+    display: block;
+}
+#home:checked ~.text-content .home,
+#blog:checked ~.text-content .blog,
+#help:checked ~.text-content .help,
+#code:checked ~.text-content .code,
+#about:checked ~.text-content .about {
+    display: block;
+}
+#blog:checked ~.text-content .home,
+#help:checked ~.text-content .home,
+#code:checked ~.text-content .home,
+#about:checked ~.text-content .home {
+    display: none;
+}
+.content .text-content .title {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.content .text-content p {
+    text-align: justify;
+}

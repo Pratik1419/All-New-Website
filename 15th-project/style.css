@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kalnia', serif;
+}
+.wrapper {
+    height: 100%;
+    width: 330px;
+    position: relative;
+}
+input[type="checkbox"] {
+    display: none;
+}
+#btn:checked ~ .menu-btn {
+    left: 247px;
+}
+#btn:checked ~ .menu-btn i::before{
+    content: "\f00d";
+}
+.wrapper #sidebar{
+    position: fixed;
+    height: 100%;
+    width: 270px;
+    background: #ac7118;
+    overflow: hidden;
+    left: -270px;
+    transition: all o.3s ease;
+}
+#btn:checked ~ #sidebar{
+    left: 0;
+}
+.wrapper .menu-btn{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    height: 45px;
+    width: 45px;
+    z-index: 999;
+    color: #f2f2f2;
+    background: #4a4a4a;
+    border: 1px solid #333;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 23px;
+    transition: all 0.3s ease;
+}
+#sidebar .title {
+    color: #000000;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 60px;
+    background: #b08a53;
+    text-align: center;
+}
+#sidebar .list-items {
+    position: relative;
+    background: #b48236;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+#sidebar .list-items li {
+    padding-left: 40px;
+    line-height: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid #333;
+    transition: all 0.3s ease;
+}
+#sidebar .list-items li:hover {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    box-shadow: 0 0 10px 3px #222;
+}
+#sidebar .list-items li a {
+    font-size: 20px;
+    font-weight: 600;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+#sidebar .list-items li a i {
+    margin-right: 20px;
+}
+#sidebar li a {
+    color: #fff;
+}
+#sidebar .list-items .icons {
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sidebar .list-items .icons a {
+    margin: 0 5px;
+    color: #f2f2f2;
+    display: block;
+    height: 40px;
+    width: 40px;
+    background: #b48236;
+    border: 1px solid #1e1d1c;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.2s ease;
+}
+#sidebar .list-items .icons a:hover {
+    background: #dc8d16;
+}
