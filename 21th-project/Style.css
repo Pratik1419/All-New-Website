@@ -9,7 +9,7 @@
 body {
     height: 100vh;
     display: flex;
-    background: #5555e1ab;
+    background: #000000ab;
     align-items: center;
     justify-content: center;
 }
@@ -18,7 +18,7 @@ body {
     position: relative;
     max-width: 500px;
     width: 100%;
-    background: #fff;
+    background: #333;
     margin: 0 15px;
     padding: 10px 20px;
     border-radius: 7px;
@@ -47,10 +47,11 @@ body {
     height: 100%;
     width: 90%;
     border-radius: 6px;
-    background: #5555e1ab;
-    animation: progress 0.4s ease-in-out forwards;
+    background: #078db193;
+    animation: progress 0.8s ease-in-out both;
     opacity: 0;
 }
+
 .skill-bar .css {
     width: 80%;
 }
@@ -81,7 +82,7 @@ body {
     color: #fff;
     padding: 2px 6px;
     border-radius: 3px;
-    background: blue;
+    background: #02a3bc92;
     z-index: 1;
 }
 .tooltip::before {
@@ -92,6 +93,6 @@ body {
     height: 10px;
     width: 10px;
     z-index: -1;
-    background-color: blue;
+    background-color: #02a3bc92;
     transform: translateX(-50%) rotate(45deg);
 }
